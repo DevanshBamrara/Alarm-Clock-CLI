@@ -19,7 +19,7 @@ class Alarm:
 
         Args:
             use_24_hour: If True, returns time in 24-hour format.
-                         If False, returns time in 12-hour AM/PM format.
+                         If False, returns time in 12-hour AM/ PM format.
 
         Returns:
             Formatted time string.

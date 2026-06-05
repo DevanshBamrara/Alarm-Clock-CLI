@@ -3,6 +3,8 @@ from datetime import timedelta
 from alarm import Alarm
 from alarm_manager import AlarmManager
 
+import winsound
+
 
 class NotificationService:
     """
@@ -19,6 +21,9 @@ class NotificationService:
         """
         print("\n" + "=" * 40)
         print("ALARM!")
+        import winsound
+        for _ in range(5):
+            winsound.Beep(1000, 500)
         print(f"Label : {alarm.label or 'No Label'}")
         print(f"Time  : {alarm.formatted_time()}")
         print("=" * 40)

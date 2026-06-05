@@ -40,20 +40,20 @@ def parse_alarm_time(time_str: str) -> datetime:
 
     now = datetime.now()
 
-alarm_time = datetime(
-    year=now.year,
-    month=now.month,
-    day=now.day,
-    hour=parsed_time.hour,
-    minute=parsed_time.minute,
-)
+    alarm_time = datetime(
+        year=now.year,
+        month=now.month,
+        day=now.day,
+        hour=parsed_time.hour,
+        minute=parsed_time.minute,
+    )
 
-# If the time has already passed today,
-# schedule it for tomorrow.
-if alarm_time <= now:
-    alarm_time += timedelta(days=1)
+    # If the time has already passed today,
+    # schedule it for tomorrow.
+    if alarm_time <= now:
+        alarm_time += timedelta(days=1)
 
-return alarm_time
+    return alarm_time
 
 
 def validate_alarm_time(time_str: str) -> bool:
