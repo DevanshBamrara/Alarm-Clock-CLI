@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import List
 
-from models.alarm import Alarm
+from alarm import Alarm
 
 
 class AlarmManager:

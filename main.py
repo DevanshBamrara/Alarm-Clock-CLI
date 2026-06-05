@@ -1,6 +1,6 @@
-from services.alarm_manager import AlarmManager
-from services.clock_service import ClockService
-from services.notification_service import NotificationService
+from alarm_manager import AlarmManager
+from clock_service import ClockService
+from notification_service import NotificationService
 from utils import parse_alarm_time
 
 

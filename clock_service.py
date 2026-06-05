@@ -1,8 +1,8 @@
 import time
 from datetime import datetime
 
-from services.alarm_manager import AlarmManager
-from services.notification_service import NotificationService
+from alarm_manager import AlarmManager
+from notification_service import NotificationService
 
 
 class ClockService:

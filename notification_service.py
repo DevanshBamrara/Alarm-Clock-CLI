@@ -1,7 +1,7 @@
 from datetime import timedelta
 
-from models.alarm import Alarm
-from services.alarm_manager import AlarmManager
+from alarm import Alarm
+from alarm_manager import AlarmManager
 
 
 class NotificationService:
